@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --green:#27ae60;
+    --black:#444;
+    --light-color:#777;
+    --bg-color:#e6e6e6;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
+                      -.4rem -.4rem 1rem #fff inset;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+
+html {
+    font-size: 62%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work sans', sans-serif;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: pink;
+}
+
+.sampul {
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.sampul .container {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.sampul .container img {
+    height: 250px;
+    width: 100%;
+}
+
+
+.sampul .nama-awal h2{
+    text-align: center;
+    margin: 30px;
+    color:  purple;
+    font-size: 20px;
+}
+
+.sampul .nama-awal p {
+    text-align: center;
+    margin: 30px;
+    color:  black;
+    font-size: 15px;
+}
+
+.sampul .nama-awal .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20%;
+    background-color: rgb(228, 190, 228);
+    border: none;
+    border-radius: 5px;
+    font-size: 140%;
+    cursor: pointer;
+    transition: background-color 1s;
+    color:  black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.sampul .nama-awal .btn:hover {
+    background-color: white;
+    transform: scale(1);
+}
+
+.preloader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+  }
+  
+.preloader-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 60%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    body{
+        padding-left: 0;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+}
+  
+  
+  

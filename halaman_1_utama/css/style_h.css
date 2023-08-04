@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --green:#27ae60;
+    --black:#444;
+    --light-color:#777;
+    --bg-color:#e6e6e6;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
+                      -.4rem -.4rem 1rem #fff inset;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.btn-back {
+    position: absolute;
+    background-color:rgb(221, 86, 104);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    color: #000;
+    border-radius: 10px;
+    margin: 10px;
+    border:  1px solid wheat;
+    transition: 1s;
+}
+
+.btn-back:hover {
+    background-color:rgb(79, 168, 219);
+    transform: scale(1);
+}
+
+.contoh  {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contoh img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.contoh .all h3 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.container .sampul-box {
+    max-width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.sampul-box .box-1 .btnn {
+    text-align: center;
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.sampul-box .box-1 .btnn:hover {
+    background-color: rgb(191, 235, 235);
+    transform: scale(1);
+}
+
+.sampul-box .box-2 .btnn{
+    text-align: center;
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.sampul-box .box-2:hover .btnn{
+    background-color: rgb(191, 235, 235);
+    transform: scale(1);
+}
+
+.sampul-box .box-3 .btnn{
+    text-align: center;
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.sampul-box .box-3 .btnn:hover {
+    background-color: rgb(191, 235, 235);
+    transform: scale(1);
+}
+
+.sampul-box .box-4 .btnn {
+    text-align: center;
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.sampul-box .box-4 .btnn:hover {
+    background-color: rgb(191, 235, 235);
+    transform: scale(1);
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 60%;
+    }
+
+    body{
+        padding-left: 0;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+  
